@@ -1,0 +1,139 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color:rgb(117, 117, 117);
+}
+a:hover{
+  color: #dad6d6;
+}
+/* Navbar */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Hero */
+.blur {
+  position: absolute;
+  width: 195px;
+  height: 324px;
+  left: -65px;
+  top: 252px;
+
+  background: #FFFFFF;
+  filter: blur(225px);
+}
+
+.hero-title {
+  margin-top: 6vh;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 140%;
+  /* or 101px */
+
+  letter-spacing: 0.01em;
+}
+
+.hero-title-span {
+  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* margin-left: 7rem; */
+}
+
+.img-blur {
+  position: absolute;
+  width: 20rem;
+  height: 40vh;
+  right: 15%;
+  top: 18%;
+
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214D76 100%);
+  border: 1px solid #000000;
+  filter: blur(61.5px);
+}
+
+.button {
+
+  background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+}
+
+.business-icon-container {
+  background: rgba(9, 151, 124, 0.1);
+}
+
+.feedback-card {
+  /* width:30%; */
+  background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  box-shadow: .1rem .1rem .1rem .1rem rgb(87, 86, 86);
+}
+
+.get-started {
+
+  background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+}
+.pointer{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .img-blur {
+    top: 80%;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 380px) {
+
+  .hero-title {
+    font-size: 2rem;
+  }
+}
